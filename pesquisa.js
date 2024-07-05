@@ -51,7 +51,7 @@ function exibirResultadosPesquisa(filmes) {
     filmes.forEach(filme => {
         const li = document.createElement('li');
         const a = document.createElement('a');
-        a.href = `https://www.themoviedb.org/movie/${filme.id}`; 
+        a.href = `desc/index.html?id=${filme.id}`; 
         a.target = '_blank'; 
         const img = document.createElement('img');
         img.src = `https://image.tmdb.org/t/p/w500${filme.poster_path}`;
