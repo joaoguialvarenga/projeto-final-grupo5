@@ -63,7 +63,7 @@
     align-items: center;
   }
   .barra-pesquisa > button {
-    height: 25px;
+    height: 38px;
     width: 100px;
     background-color: var(--clr-dr);
     border-radius: 15px;
@@ -75,7 +75,7 @@
   .barra-pesquisa > input {
     background-color: var(--clr-dr);
     border-radius: 15px;
-    height: 30px;
+    height: 28px;
     width: 360px;
     border: none;
   }

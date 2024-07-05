@@ -1,8 +1,8 @@
 :root {
   --clr-blk: #1e1e1e;
   --clr-txt: white;
-  --clr-verm: #a61313;
-  --clr-dr: darkred;
+  --clr-verm: red;
+  --clr-dr: #a61313;
 }
 
 body {
@@ -17,6 +17,10 @@ body {
   padding-right: 0;
 }
 
+button:hover {
+  background-color: #cc0000;
+}
+
 #header {
   display: flex;
   flex-direction: row;
@@ -28,6 +32,7 @@ body {
   width: 1483px;
 
   margin: 0 auto;
+  margin-bottom: 25px;
 }
 #header > div {
   display: flex;
@@ -63,12 +68,12 @@ body {
   display: flex;
   flex: 1;
   width: fit-content;
-  margin-right: 265px;
-  margin-left: 185px;
+  margin-right: 260px;
+  margin-left: 180px;
   align-items: center;
 }
 .barra-pesquisa > button {
-  height: 25px;
+  height: 38px;
   width: 100px;
   background-color: var(--clr-dr);
   border-radius: 15px;
@@ -80,7 +85,7 @@ body {
 .barra-pesquisa > input {
   background-color: var(--clr-dr);
   border-radius: 15px;
-  height: 30px;
+  height: 28px;
   width: 360px;
   border: none;
 }
