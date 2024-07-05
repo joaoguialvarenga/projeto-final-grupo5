@@ -120,10 +120,10 @@
     border-radius: 12px;
 }
 
-form > button {
+.form-text > button {
 
     margin-inline: 0;
-    background-color:var(--clr-verm);
+    background-color:var(--clr-dr);
     color: var(--clr-txt);
     border-radius: 12px;
     font-size: 20px;
@@ -138,9 +138,4 @@ form > button {
   border-radius: 10px;
   border: none;
   color: var(--clr-txt);
-}
-
-form > button :hover {
-  background-color: var(--clr-dr);
-
 }
