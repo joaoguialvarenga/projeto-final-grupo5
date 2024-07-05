@@ -1,5 +1,6 @@
-:root{
+:root {
   --clr-blk: black;
+  --clr-txt: white;
   --clr-txt:white;
   --clr-verm: #a61313;
   --clr-dr: #a61313;
@@ -9,7 +10,6 @@
   color: var(--clr-txt);
   font-size: 30px;
   line-height: 36px;
-  
 }
 
 #header {
@@ -31,6 +31,8 @@
 }
 
 .logo {
+  width: 195px;
+  height: 177px;
   max-width: 195px;
   max-height: 177px;
   margin: 0%;
@@ -169,18 +171,20 @@ body {
   display: flex;
   flex: 1;
   width: fit-content;
-  margin-right: 265px;
-  margin-left: 185px;
+  margin-right: 280px;
+  margin-left: 200px;
   align-items: center;
 }
 .barra-pesquisa > button {
-  height: 25px;
+  height: 25px; /* Altura do botão */
   width: 100px;
   background-color: var(--clr-dr);
   border-radius: 15px;
   color: var(--clr-txt);
   font-size: 16px;
   border: none;
+  text-align: center;
+  line-height: 8px; /* Centraliza o texto verticalmente */
 }
 
 .barra-pesquisa > input {
@@ -189,6 +193,16 @@ body {
   height: 30px;
   width: 360px;
   border: none;
+  font-size: 0.6em; /* Ensure consistency in font size */
+  line-height: 1; /* Adjust as needed for vertical centering */
+  color: var(--clr-txt);
+}
+
+.barra-pesquisa input::placeholder {
+  color: var(--clr-txt);
+  font-size: 1; /* Adjust the size as needed */
+  line-height: 1; /* Ensure consistency in line height */
+  text-indent: 10px;
 }
 
 .login {
@@ -239,34 +253,6 @@ h2 {
 
 p {
   font-size: small;
-
-  flex-direction: row;
-  border-radius: 12px;
-
-  font-size: large;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 5px;
-  margin-right: 50px;
-}
-
-.login > a {
-  color: var(--clr-txt);
-  text-decoration: none;
-}
-
-
-h1 {
-  text-align: start;
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-p {
-  font-size: 16px;
 }
 
 .container1 {

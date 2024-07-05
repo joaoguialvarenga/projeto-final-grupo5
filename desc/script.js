@@ -12,6 +12,7 @@ const apiKey = '3820de5f9f25b689a03f6a04ecdd492d';
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('titulo-filme').textContent = data.title;
+                    document.getElementById('titulo-filme').style.fontSize = '40px';
                     document.getElementById('poster-filme').src = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
                     document.getElementById('genero').textContent = 'Gênero: ' + data.genres.map(genre => genre.name).join(', ');
                     document.getElementById('lancamento').textContent = 'Lançamento: ' + data.release_date;
