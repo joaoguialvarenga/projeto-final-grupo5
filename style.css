@@ -87,18 +87,18 @@
 }
 
 .barra-pesquisa > input {
-  background-color: var(--clr-dr);
+  background-color: var(--clr-txt);
   border-radius: 15px;
   height: 30px;
   width: 360px;
   border: none;
   font-size: 0.6em; /* Ensure consistency in font size */
   line-height: 1; /* Adjust as needed for vertical centering */
-  color: var(--clr-txt);
+  color: var(--clr-blk);
 }
 
 .barra-pesquisa input::placeholder {
-  color: var(--clr-txt);
+  color: var(--clr-blk);
   font-size: 1; /* Adjust the size as needed */
   line-height: 1; /* Ensure consistency in line height */
   text-indent: 10px;
