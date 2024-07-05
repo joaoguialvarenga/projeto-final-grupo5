@@ -1,0 +1,273 @@
+:root{
+  --clr-blk: black;
+  --clr-txt:white;
+  --clr-verm: red;
+  --clr-dr: darkred;
+
+  background-color: var(--clr-blk);
+  text-decoration: none;
+  color: var(--clr-txt);
+  font-size: 30px;
+  line-height: 36px;
+  
+}
+
+#header {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   font-size: 30px;
+   line-height: 36px;
+   background-color: var(--clr-verm);
+   max-height: 5rem;
+   margin: 0 auto;
+}
+
+#header > div{
+   display: flex;
+   justify-content: space-between;
+   width: fit-content;
+   height: 196px;
+}
+
+.logo {
+   width: 195px;
+   height: 177px;
+   margin: 0%;
+   padding: 0px;
+   justify-content: left;
+
+}
+
+#logo-link {
+  display: inline-block;
+  text-decoration: none; /* Remove underline do link */
+}
+
+#logo-img {
+  display: block;
+  max-width: 100%; /* Ajusta a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+
+.favoritos {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 5px;
+}
+
+.favoritos > .fa-heart {
+  color: var(--clr-txt); /* Cor do ícone */
+  font-size: large; /* Tamanho do ícone */
+}
+
+.favoritos > a {
+  color: var(--clr-txt); /* Cor do texto */
+  text-decoration: none;
+  font-size: large; /* Tamanho do texto */
+}
+
+.barra-pesquisa {
+display: flex;
+flex: 1;
+width: fit-content;
+margin-right: 280px;
+margin-left: 200px;
+align-items: center;
+
+}
+.barra-pesquisa > button {
+    height: 25px; /* Altura do botão */
+    width: 100px;
+    background-color: var(--clr-dr);
+    border-radius: 15px;
+    color: var(--clr-txt);
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    line-height: 8px; /* Centraliza o texto verticalmente */
+}
+
+.barra-pesquisa > input{
+   background-color: var(--clr-dr);
+   border-radius: 15px;
+   height: 30px;
+   width: 360px;
+   border: none;
+   font-size: 0.6em; /* Ensure consistency in font size */
+   line-height: 1; /* Adjust as needed for vertical centering */
+   color:  var(--clr-txt);
+   
+}
+
+.barra-pesquisa input::placeholder {
+  color: var(--clr-txt);
+  font-size: 1; /* Adjust the size as needed */
+  line-height: 1; /* Ensure consistency in line height */
+  text-indent: 10px;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 5px;
+  margin-right: 50px;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.login > a {
+  color: var(--clr-txt); /* Cor do texto */
+  text-decoration: none;
+  font-size: large; /* Tamanho do texto */
+}
+
+.login > .fa-user,
+.login > .fa-arrow-right {
+  color: var(--clr-txt); /* Cor dos ícones */
+  font-size: large; /* Tamanho dos ícones */
+}
+
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: start;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: small;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.image-container1 img {
+  margin-right: 50px;
+  border-radius: 20px;
+}
+
+.textDesc {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 15px;
+}
+
+.textDesc h1,
+.textDesc h2,
+.textDesc p {
+  margin: 0;
+}
+
+.container1,
+.nossaOp,
+.comentarios,
+.novoComent,
+.indicacoes {
+  width: 80%;
+  padding: 5px;
+}
+
+.textDesc,
+.comentario,
+.novoComent,
+.indicacoes {
+  text-align: justify;
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comentario {
+  background-color: #000000;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+.image-comentario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-comentario img {
+  height: 36px;
+}
+
+.nossaOp,
+.novoComent {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #a61313;
+}
+
+.barraComent {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 16px;
+  background-color: #a61313;
+  border-radius: 20px;
+}
+
+.barraComent input {
+  background-color: #ffffff;
+  font-size: medium;
+  width: 100%;
+  height: 15px;
+  border: none;
+  border-radius: 100px;
+  padding: 15px;
+}
+
+.barraComent button {
+  border-radius: 10px;
+}
+
+.indicacoes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.indicacoes h2 {
+  margin: 0;
+  padding: 5px;
+  border-left: 4px solid #a61313;
+}
+
+.image-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.indicacoes img {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  width: 24%;
+}
