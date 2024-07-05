@@ -1,8 +1,8 @@
 :root {
-  --clr-blk: black;
+  --clr-blk: #1e1e1e;
   --clr-txt: white;
   --clr-verm: red;
-  --clr-dr: darkred;
+  --clr-dr: #a61313;
 
   background-color: var(--clr-blk);
   text-decoration: none;
@@ -10,6 +10,7 @@
 
   font-size: 30px;
   line-height: 36px;
+  font-family: Arial, sans-serif;
 }
 #header {
   display: flex;

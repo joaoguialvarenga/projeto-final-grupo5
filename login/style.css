@@ -1,8 +1,8 @@
 :root {
-    --clr-blk: black;
+    --clr-blk: #1e1e1e;
     --clr-txt: white;
     --clr-verm: red;
-    --clr-dr: darkred;
+    --clr-dr: #a61313;
   
     background-color: var(--clr-blk);
     text-decoration: none;
@@ -10,6 +10,7 @@
   
     font-size: 30px;
     line-height: 36px;
+    font-family: Arial, sans-serif;
   }
   #header {
     display: flex;
@@ -119,10 +120,10 @@
     border-radius: 12px;
 }
 
-form > button {
+.form-text > button {
 
     margin-inline: 0;
-    background-color:var(--clr-verm);
+    background-color:var(--clr-dr);
     color: var(--clr-txt);
     border-radius: 12px;
     font-size: 20px;
@@ -137,9 +138,4 @@ form > button {
   border-radius: 10px;
   border: none;
   color: var(--clr-txt);
-}
-
-form > button :hover {
-  background-color: var(--clr-dr);
-
 }
