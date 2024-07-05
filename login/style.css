@@ -2,7 +2,7 @@
     --clr-blk: #1e1e1e;
     --clr-txt: white;
     --clr-verm: red;
-    --clr-dr: darkred;
+    --clr-dr: #a61313;
   
     background-color: var(--clr-blk);
     text-decoration: none;
