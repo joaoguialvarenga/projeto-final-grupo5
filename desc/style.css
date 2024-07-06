@@ -1,7 +1,6 @@
 :root {
   --clr-blk: black;
   --clr-txt: white;
-  --clr-txt:white;
   --clr-verm: #a61313;
   --clr-dr: #a61313;
 
@@ -31,12 +30,9 @@
 }
 
 .logo {
-  width: 195px;
-  height: 177px;
-  max-width: 195px;
-  max-height: 177px;
+  width: 100px;
+  height: 100px;
   margin: 0%;
-  padding: 0px;
   justify-content: left;
 }
 
@@ -47,7 +43,7 @@
 
 #logo-img {
   display: block;
-  max-width: 100%; /* Ajusta a largura máxima da imagem */
+  max-width: 90%; /* Ajusta a largura máxima da imagem */
   height: auto; /* Mantém a proporção da imagem */
 }
 
@@ -77,8 +73,8 @@
   margin-left: 200px;
   align-items: center;
 }
-.barra-pesquisa > button {
-  height: 25px; /* Altura do botão */
+.barra-pesquisa button {
+ height: 30px; /* Ajusta a altura do botão */
   width: 100px;
   background-color: var(--clr-dr);
   border-radius: 15px;
@@ -86,7 +82,8 @@
   font-size: 16px;
   border: none;
   text-align: center;
-  line-height: 8px; /* Centraliza o texto verticalmente */
+  line-height: 30px; /* Centraliza o texto verticalmente */
+  margin-left: 10px; /* Adiciona espaçamento entre o botão e o campo de pesquisa */
 }
 
 .barra-pesquisa > input {
@@ -102,104 +99,6 @@
 
 .barra-pesquisa input::placeholder {
   color: var(--clr-blk);
-  font-size: 1; /* Adjust the size as needed */
-  line-height: 1; /* Ensure consistency in line height */
-  text-indent: 10px;
-  
-:root {
-  --clr-blk: #1e1e1e;
-  --clr-txt: white;
-  --clr-verm: #a61313;
-  --clr-dr: darkred;
-}
-
-body {
-  background-color:var(--clr-blk);
-  color: white;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-#header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 30px;
-  line-height: 36px;
-  background-color: var(--clr-verm);
-  max-height:9.35rem;
-  width: 1483px;
-
-  margin: 0 auto;
-}
-#header > div {
-  display: flex;
-  justify-content: space-between;
-  width: fit-content;
-
-  height: 196px;
-}
-.logo {
-  width: 195px;
-  height: 177px;
-  margin: 0%;
-  padding: 0px;
-  justify-content: left;
-}
-.favoritos {
-  display: flex;
-  flex-direction: row;
-
-  font-size: large;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: 20px;
-  gap: 5px;
-}
-
-.favoritos > a {
-  color: var(--clr-txt);
-  text-decoration: none;
-}
-
-.barra-pesquisa {
-  display: flex;
-  flex: 1;
-  width: fit-content;
-  margin-right: 280px;
-  margin-left: 200px;
-  align-items: center;
-}
-.barra-pesquisa > button {
-  height: 25px; /* Altura do botão */
-  width: 100px;
-  background-color: var(--clr-dr);
-  border-radius: 15px;
-  color: var(--clr-txt);
-  font-size: 16px;
-  border: none;
-  text-align: center;
-  line-height: 8px; /* Centraliza o texto verticalmente */
-}
-
-.barra-pesquisa > input {
-  background-color: var(--clr-dr);
-  border-radius: 15px;
-  height: 30px;
-  width: 360px;
-  border: none;
-  font-size: 0.6em; /* Ensure consistency in font size */
-  line-height: 1; /* Adjust as needed for vertical centering */
-  color: var(--clr-txt);
-}
-
-.barra-pesquisa input::placeholder {
-  color: var(--clr-txt);
   font-size: 1; /* Adjust the size as needed */
   line-height: 1; /* Ensure consistency in line height */
   text-indent: 10px;
@@ -227,7 +126,7 @@ body {
 }
 
 body {
-  background-color:var(--clr-blk);
+  background-color: var(--clr-blk);
   color: white;
   font-family: Arial, sans-serif;
   display: flex;
@@ -378,21 +277,6 @@ p {
   width: 24%;
 }
 
-.barra-pesquisa button {
-  height: 25px; /* Altura do botão */
-  width: 100px;
-  background-color: var(--clr-dr);
-  border-radius: 15px;
-  color: var(--clr-txt);
-  font-size: 16px;
-  border: none;
-  text-align: center;
-  line-height: 8px; /* Centraliza o texto verticalmente */
- 
-  border-radius: 20px;
-  width: 24%;
-}
-
 @media (max-width: 640px) {
   h1 {
     font-size: 25.96px;
@@ -444,5 +328,5 @@ p {
   .indicacoes img {
     border-radius: 20px;
     width: 24%;
-  }
+ }
 }
