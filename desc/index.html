@@ -1,95 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infos do filme</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="../index.html" id="logo-link">
+                <img src="../img/logo-removebg-preview.png" alt="Logo de um sofá com rolos de filme" id="logo-img">
+            </a>        
+        </div>
+
+      <div class="favoritos">
+          <i class="fa-solid fa-heart"></i>
+          <a href="../favoritos.html" target="_blank">Favoritos</a>
+      </div>
+
+      <div class="barra-pesquisa">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Pesquisar" id="search-input">
+          <a href="../pesquisa.html" id="search-link">
+              <button type="button" id="search-button">Procurar</button>
+          </a>
+      </div>
+
+      <div class="login">
+          <a>Olá Usuário! </a>
+      </div>
+    </header>
+
     <div class="container1">
-      <div class="image-container1">
-        <img src="../img/divertida.png" alt="Imagem" />
-      </div>
-      <div class="textDesc">
-        <h1>Divertida Mente 2</h1>
-        <p>Gênero: Aventura, Animação, Comédia, Família</p>
-        <p>Lançamento: 20/06/2024</p>
-        <h2>Sinopse:</h2>
-        <p>
-          Com um salto temporal, Riley se encontra mais velha, passando pela tão
-          temida adolescência. Junto com o amadurecimento, a sala de controle
-          também está passando por uma adaptação para dar lugar a algo
-          totalmente inesperado: novas emoções. As já conhecidas, Alegria,
-          Raiva, Medo, Nojinho e Tristeza não têm certeza de como se sentir
-          quando novos inquilinos chegam ao local.
-        </p>
-        <div>
-          <h2>Avaliação do Na Poltrona</h2>
-          <h2>4.5</h2>
+        <div class="image-container1">
+            <img id="poster-filme" " alt="Imagem">
         </div>
-      </div>
+        <div class="textDesc">
+            <h1 id="titulo-filme"></h1>
+            <p id="genero">Gênero:</p>
+            <p id="lancamento">Lançamento:</p>
+            <h2>Sinopse:</h2>
+            <p id="sinopse"></p>
+        </div>
     </div>
-    <div class="nossaOp">
-      <h2>Nossa opinião</h2>
-      <p>
-        Dado o sucesso do primeiro filme, as expectativas são altas para que a
-        sequência mantenha a qualidade narrativa e a profundidade emocional ao
-        explorar o desenvolvimento contínuo de Riley e suas emoções,
-        especialmente considerando a transição para a adolescência. Espera-se
-        que a Pixar entregue mais uma história inovadora e tocante que ressoe
-        com o público, assim como fez com o original.
-      </p>
-    </div>
+
     <div class="comentarios">
-      <h2>Opinião da comunidade Na Poltrona</h2>
-      <div class="comentario">
-        <div class="image-comentario">
-          <img src="../img/iconeperfil.png" alt="Imagem" />
-          <h2>Fulano de tal</h2>
+        <h2>Opinião da comunidade Na Poltrona</h2>
+        <div class="comentario">
+            <div class="image-comentario">
+                <h2>Opiniões</h2>
+            </div>
+            <p>
+                <!-- Coloque aqui os comentários da comunidade -->
+            </p>
         </div>
-        <p>
-          Dado o sucesso do primeiro filme, as expectativas são altas para que a
-          sequência mantenha a qualidade narrativa e a profundidade emocional ao
-          explorar o desenvolvimento contínuo de Riley e suas emoções,
-          especialmente considerando a transição para a adolescência. Espera-se
-          que a Pixar entregue mais uma história inovadora e tocante que ressoe
-          com o público, assim como fez com o original.
-        </p>
-      </div>
-      <div class="comentario">
-        <div class="image-comentario">
-          <img src="../img/iconeperfil.png" alt="Imagem" />
-          <h2>Fulano de tal</h2>
-        </div>
-        <p>
-          Dado o sucesso do primeiro filme, as expectativas são altas para que a
-          sequência mantenha a qualidade narrativa e a profundidade emocional ao
-          explorar o desenvolvimento contínuo de Riley e suas emoções,
-          especialmente considerando a transição para a adolescência. Espera-se
-          que a Pixar entregue mais uma história inovadora e tocante que ressoe
-          com o público, assim como fez com o original.
-        </p>
-      </div>
+
     </div>
     <div class="novoComent">
-      <h2>Compartilhe sua opinião conosco!</h2>
-      <div class="barraComent">
-        <div class="image-comentario">
-          <img src="../img/iconeperfil.png" alt="Imagem" />
+        <h2>Compartilhe sua opinião conosco!</h2>
+        <div class="barraComent">
+            <div class="image-comentario">
+                <img src="iconeperfil.png" alt="Imagem">
+            </div>
+            <input placeholder="Digite aqui...">
+            <button type="submit">Enviar</button>
         </div>
-        <input placeholder="Digite aqui..." />
-        <button type="submit">Enviar</button>
-      </div>
     </div>
     <div class="indicacoes">
-      <h2>Você também pode gostar</h2>
-      <div class="image-container2">
-        <img src="../img/divertida.png" alt="Imagem" />
-        <img src="../img/divertida.png" alt="Imagem" />
-        <img src="../img/divertida.png" alt="Imagem" />
-        <img src="../img/divertida.png" alt="Imagem" />
-      </div>
+        <h2>Você também pode gostar</h2>
+        <div class="image-container2">
+            <!-- Coloque aqui as imagens de indicações -->
+        </div>
     </div>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>

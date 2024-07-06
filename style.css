@@ -1,16 +1,16 @@
 :root {
   --clr-blk: black;
   --clr-txt: white;
-  --clr-verm: red;
-  --clr-dr: darkred;
+  --clr-verm: #a61313;
+  --clr-dr: #a61313;
 
   background-color: var(--clr-blk);
   text-decoration: none;
   color: var(--clr-txt);
-
   font-size: 30px;
   line-height: 36px;
 }
+
 #header {
   display: flex;
   flex-direction: row;
@@ -19,16 +19,16 @@
   line-height: 36px;
   background-color: var(--clr-verm);
   max-height: 5rem;
-
   margin: 0 auto;
 }
+
 #header > div {
   display: flex;
   justify-content: space-between;
   width: fit-content;
-
   height: 196px;
 }
+
 .logo {
   width: 195px;
   height: 177px;
@@ -36,77 +36,98 @@
   padding: 0px;
   justify-content: left;
 }
+
+#logo-link {
+  display: inline-block;
+  text-decoration: none; /* Remove underline do link */
+}
+
+#logo-img {
+  display: block;
+  max-width: 100%; /* Ajusta a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
 .favoritos {
   display: flex;
   flex-direction: row;
-
-  font-size: large;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: 20px;
+  align-items: center; /* Centraliza verticalmente */
   gap: 5px;
 }
 
+.favoritos > .fa-heart {
+  color: var(--clr-txt); /* Cor do ícone */
+  font-size: large; /* Tamanho do ícone */
+}
+
 .favoritos > a {
-  color: var(--clr-txt);
+  color: var(--clr-txt); /* Cor do texto */
   text-decoration: none;
+  font-size: large; /* Tamanho do texto */
 }
 
 .barra-pesquisa {
   display: flex;
   flex: 1;
   width: fit-content;
-
-  margin-right: 260px;
-  margin-left: 180px;
+  margin-right: 280px;
+  margin-left: 200px;
   align-items: center;
 }
 .barra-pesquisa > button {
-  height: fit-content;
+  height: 25px; /* Altura do botão */
   width: 100px;
   background-color: var(--clr-dr);
   border-radius: 15px;
   color: var(--clr-txt);
   font-size: 16px;
   border: none;
+  text-align: center;
+  line-height: 8px; /* Centraliza o texto verticalmente */
 }
 
 .barra-pesquisa > input {
-  background-color: var(--clr-dr);
+  background-color: var(--clr-txt);
   border-radius: 15px;
   height: 30px;
   width: 360px;
   border: none;
+  font-size: 0.6em; /* Ensure consistency in font size */
+  line-height: 1; /* Adjust as needed for vertical centering */
+  color: var(--clr-blk);
+}
+
+.barra-pesquisa input::placeholder {
+  color: var(--clr-blk);
+  font-size: 1; /* Adjust the size as needed */
+  line-height: 1; /* Ensure consistency in line height */
+  text-indent: 10px;
 }
 
 .login {
   display: flex;
-
   flex-direction: row;
-  border-radius: 12px;
-
-  font-size: large;
-  flex-wrap: wrap;
-  align-items: center;
+  align-items: center; /* Centraliza verticalmente */
   gap: 5px;
   margin-right: 50px;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 
 .login > a {
-  color: var(--clr-txt);
+  color: var(--clr-txt); /* Cor do texto */
   text-decoration: none;
+  font-size: large; /* Tamanho do texto */
 }
 
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.login > .fa-user,
+.login > .fa-arrow-right {
+  color: var(--clr-txt); /* Cor dos ícones */
+  font-size: large; /* Tamanho dos ícones */
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #1c1c1c;
+  background-color: #121010;
   color: #fff;
 }
 
@@ -128,20 +149,37 @@ main {
 
 h2 {
   margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 10px;
+  font-size: 30px;
   color: #fff;
 }
 
 .carrossel {
   display: flex;
   align-items: center;
-  gap: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.carrossel button {
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem; /* Tamanho menor */
+  color: #fff;
+  z-index: 2;
+  width: 50px; /* Largura menor */
+  height: 50px; /* Altura menor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
 }
 
 .carrossel-container {
   overflow: hidden;
-  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 70px); /* Ajuste a largura do container */
 }
 
 .filme-lista {
@@ -169,7 +207,7 @@ h2 {
 }
 
 button {
-  background-color: #ff0000;
+  background-color: #a61313;
   border: none;
   color: #fff;
   padding: 10px;
@@ -179,7 +217,7 @@ button {
 }
 
 button:hover {
-  background-color: #cc0000;
+  background-color: #a61313;
 }
 
 .prev {
@@ -193,6 +231,7 @@ button:hover {
 h2 {
   position: relative;
   padding-left: 15px;
+  margin: auto 80px;
 }
 
 h2::before {
@@ -202,6 +241,108 @@ h2::before {
   top: 50%;
   transform: translateY(-50%);
   width: 3px;
-  height: 100%;
-  background-color: red;
+  height: 62px;
+  background-color: #a61313;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.favorite-icon:hover {
+  color: #a61313;
+}
+
+.filme-lista li {
+  position: relative;
+  list-style: none;
+}
+
+.favorite-icon.favorited {
+  color: #a61313;
+}
+
+#favoritos {
+  padding: 20px;
+  max-width: 1200px; /* Ajuste conforme necessário */
+  margin: 0 auto;
+}
+
+#favoritos .filme-lista {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  gap: 20px; /* Espaço entre os itens */
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  padding-top: 10px;
+  padding-left: 70px; /* Adiciona espaço à esquerda */
+}
+
+#favoritos .filme-lista li {
+  flex: 0 0 150px; /* Largura fixa para cada item */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto; /* Empurra os itens para a direita */
+}
+
+#favoritos .filme-lista img {
+  width: 150px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+#favoritos .filme-lista span {
+  text-align: center;
+}
+
+#resultados-pesquisa {
+  padding: 20px;
+  max-width: 1200px; /* Ajuste conforme necessário */
+  margin: 0 auto;
+}
+
+#resultados-pesquisa .filme-lista {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  gap: 20px; /* Espaço entre os itens */
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  padding-top: 10px;
+  padding-left: 70px; /* Adiciona espaço à esquerda */
+}
+
+#resultados-pesquisa .filme-lista li {
+  flex: 0 0 150px; /* Largura fixa para cada item */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto; /* Empurra os itens para a direita */
+}
+
+#resultados-pesquisa .filme-lista img {
+  width: 150px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+#resultados-pesquisa .filme-lista span {
+  text-align: center;
+}
+
+.todosGen {
+  padding: 30px 45px;
+}
+
+section img {
+  border-radius: 20px;
 }

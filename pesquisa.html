@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <title>Pesquisa filmes</title>
+</head>
+<body>
+    <header id="header">
+        
+        <div class="logo">
+            <a href="index.html" id="logo-link">
+                <img src="img/logo-removebg-preview.png" alt="Logo de um sofá com rolos de filme" id="logo-img">
+            </a>        
+        </div>
+
+        <div class="favoritos">
+            <i class="fa-solid fa-heart"></i>
+            <a href="favoritos.html" target="_blank">Favoritos</a>
+        </div>
+        <div class="barra-pesquisa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Pesquisar" id="search-input">
+            <a href="pesquisa.html" id="search-link">
+                <button type="button" id="search-button">Procurar</button>
+            </a>
+        </div>
+        <div class="login">
+            <a>Olá Usuário! </a>
+        </div>
+    </header>
+    
+        <section id="resultados-pesquisa">
+            <h2>Resultados da Pesquisa</h2>
+            <ul id="filmes-pesquisa" class="filme-lista">
+                <!-- Filmes pesquisados aparecerão aqui -->
+            </ul>
+        </section>
+
+        <script src="pesquisa.js"></script>  
+</body>
+</html>
